@@ -1,0 +1,111 @@
+* {
+    font-family: "Figtree", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Yellow: rgb(245, 223, 77);
+    --white: rgb(255, 255, 255);
+    --Gray: rgb(107, 107, 107);
+    --DarkGray: rgb(18, 18, 18)
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgb(160, 141, 17), var(--Yellow));
+    
+}
+
+.container {
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--DarkGray);
+    border-radius: 15px;
+    width: 384px;
+    box-shadow: 8px 8px 10px 0px #000;
+    padding: 24px;
+}
+
+.illustration {
+    border-radius: 10px;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 24px;
+}
+
+button {
+    border-radius: 4px;
+    background: var(--Yellow);
+    padding: 4px 12px;
+    color: var(--DarkGray);
+    font-weight: 800;
+    border: none;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.7;
+}
+
+.date {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #111;
+    margin: 12px 0;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 36px;
+    color: #111;
+}
+
+.description {
+    color: #6B6B6B;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 12px 0 24px 0;
+}
+
+.people {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.people:hover {
+    transform: scale(1.1);
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+}
+
+.name {
+    color: #111;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 21px;
+    margin-left: 12px;
+}
